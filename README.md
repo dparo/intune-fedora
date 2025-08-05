@@ -51,7 +51,7 @@ YMMV
 * Check the JVM/JRE used in the following files, that use a `$JAVA_HOME` pointing to an actual existing JDK:
   * `/usr/lib/systemd/system/microsoft-identity-device-broker.service` 
   * `/usr/lib/systemd/user/microsoft-identity-broker.service`
-  
+* If having trouble with endpoints / logins from `intune-portal`, then run the provided `clear-cache.sh` script
 
 # Additional Resources
 - [](https://github.com/recolic/microsoft-intune-archlinux/issues/8)
