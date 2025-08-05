@@ -55,3 +55,4 @@ YMMV
 
 # Additional Resources
 - [](https://github.com/recolic/microsoft-intune-archlinux/issues/8)
+- Verify conformance at the following address [](https://entra.microsoft.com/) in the `Devices` section. Double check also the `Devices` section in [](https://myaccount.microsoft.com)
