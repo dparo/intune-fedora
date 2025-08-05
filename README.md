@@ -48,3 +48,10 @@ YMMV
 * launching Microsoft Intune from the desktop shortcut does nothing
   * make sure you aren't missing any packages needed to run the application
   * run it from the terminal for any tips on what they might be: `/opt/microsoft/intune/bin/intune-portal`
+* Check the JVM/JRE used in the following files, that use a `$JAVA_HOME` pointing to an actual existing JDK:
+  * `/usr/lib/systemd/system/microsoft-identity-device-broker.service` 
+  * `/usr/lib/systemd/user/microsoft-identity-broker.service`
+  
+
+# Additional Resources
+- [](https://github.com/recolic/microsoft-intune-archlinux/issues/8)
