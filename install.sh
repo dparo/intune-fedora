@@ -21,5 +21,7 @@ echo "You need to restart your machine for changes to apply"
 
 sudo systemctl enable --now intune-daemon.service
 sudo systemctl enable --now intune-daemon.socket     # Creates /run/intune/daemon.socket
-sudo systemctl enable --now microsoft-identity-broker.service
+sudo systemctl enable --now microsoft-identity-device-broker.service
+systemctl enable --user --now microsoft-identity-broker.service
+# systemctl enable --user --now intune-agent.timer
 # systemctl --user enable intune-agent.timer
