@@ -13,7 +13,8 @@ else
   exit 1
 fi
 
-$PODMAN build . 2>&1 | tee build.log
+$PODMAN builder prune --all -f
+$PODMAN build --no-cache . 2>&1 | tee build.log
 
 if [ $PODMAN = podman ]; then
   ID=$(tail -n 1 build.log)
